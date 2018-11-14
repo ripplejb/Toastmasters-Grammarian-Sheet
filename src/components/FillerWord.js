@@ -45,7 +45,7 @@ export class FillerWord extends Component {
     return  <FormGroup>
       <Grid>
         <Row>
-          <Col xs={10} md={10} sm={10}>
+          <Col xs={11} md={11} sm={11}>
             <Button bsSize="large" bsStyle={FillerWord.getStyle(this.props.filler.count)} onClick={() => {
               this.addCount(this.props.filler)
             }} block>
@@ -53,8 +53,8 @@ export class FillerWord extends Component {
               <Glyphicon glyph="plus-sign"/> {this.props.filler.filler} ({this.props.filler.count})
             </Button>
           </Col>
-          <Col xs={2} md={2} sm={2}>
-            <Button bsSize="small" bsStyle='warning' onClick={() => {
+          <Col xs={1} md={1} sm={1}>
+            <Button bsSize="large" bsStyle='warning' onClick={() => {
               this.minusCount(this.props.filler)
             }} >
               <Glyphicon glyph="minus-sign"/>

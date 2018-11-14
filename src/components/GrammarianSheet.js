@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Form, FormGroup, Col, FormControl, Glyphicon, Button, Grid, Row, Label, ControlLabel} from 'react-bootstrap';
+import {Form, FormGroup, Col, FormControl, ControlLabel} from 'react-bootstrap';
 import {FillerWord} from "./FillerWord";
 
 

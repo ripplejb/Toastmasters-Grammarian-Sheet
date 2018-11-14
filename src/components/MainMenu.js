@@ -1,33 +1,38 @@
 import React, {Component} from 'react';
-import {Nav, Navbar, NavItem} from 'react-bootstrap';
+import {NavDropdown, Navbar, MenuItem, Nav} from 'react-bootstrap';
 import '../assets/css/bootstrap.min.css';
 import '../assets/css/bootstrap-theme.min.css';
 
 export class MainMenu extends Component {
+
+  constructor(props) {
+    super(props)
+  }
+
+
   render() {
     return (
       <Navbar fluid inverse collapseOnSelect defaultExpanded>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#">Speaker List</a>
+            <a href="#">Grammarian Filler Word Counter</a>
           </Navbar.Brand>
-          <Navbar.Toggle />
         </Navbar.Header>
-        <Navbar.Collapse >
-        <Nav>
+          <Nav>
+        <NavDropdown title="Speakers" class="dropdown-menu" onToggle={() => this.props.handleDropDown()}>
           {
             this.props.data.list.map((speaker) => {
-              return <NavItem eventKey={speaker.id} onClick={
+              return <MenuItem eventKey={1 + (speaker.id/10)} onClick={
                 () => {
                   this.props.handleSelect(speaker.id)
                 }
               }>
                 {speaker.title}
-              </NavItem>
+              </MenuItem>
             })
           }
+        </NavDropdown>
         </Nav>
-        </Navbar.Collapse>
       </Navbar>
     )
   }

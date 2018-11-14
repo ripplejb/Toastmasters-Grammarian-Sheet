@@ -3,18 +3,25 @@ import './App.css';
 import {MainMenu} from "./components/MainMenu";
 import {speakers} from './data/list'
 import {GrammarianSheet} from "./components/GrammarianSheet";
+import {Collapse} from 'react-bootstrap'
 
 class App extends Component {
   constructor(props,context) {
     super(props, context);
     this.state = {
-      currentSpeaker: speakers.list[0]
-    }
+      currentSpeaker: speakers.list[0],
+      dropDownOpen: false
+    };
     this.handleRoleChange = this.handleRoleChange.bind(this);
+    this.handleDropDown = this.handleDropDown.bind(this);
   }
 
   findIndex(id) {
     return speakers.list.findIndex((speaker) => {return speaker.id === id});
+  }
+
+  handleDropDown() {
+    this.setState(prevState => ({currentSpeaker: prevState.currentSpeaker, dropDownOpen: !prevState.dropDownOpen}));
   }
 
   handleRoleChange(id) {
@@ -34,8 +41,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <MainMenu data={speakers} handleSelect={this.handleRoleChange}/>
-        <GrammarianSheet speaker={this.state.currentSpeaker} onGrammarianSheetChange={(speaker) => this.handleGrammarianSheetChange(speaker)}/>
+        <MainMenu data={speakers} handleSelect={this.handleRoleChange} handleDropDown={() => this.handleDropDown()}/>
+        {!this.state.dropDownOpen ?
+          <GrammarianSheet speaker={this.state.currentSpeaker} onGrammarianSheetChange={(speaker) => this.handleGrammarianSheetChange(speaker)}/> :
+          null }
+
       </div>
     );
   }
