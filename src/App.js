@@ -14,7 +14,7 @@ class App extends Component {
     const savedSpeakers = localStorage.getItem(this.LOCAL_STORAGE_KEY);
     this.state = {
       allStates: {
-        speakers: savedSpeakers ? JSON.parse(savedSpeakers) : initialSpeakersList,
+        speakers: savedSpeakers ? JSON.parse(savedSpeakers) : JSON.parse(JSON.stringify(initialSpeakersList)),
         currentIndex: 0,
         dropDownOpen: false,
         clearModelShow: false
@@ -59,21 +59,19 @@ class App extends Component {
   }
 
   handleClearModelResponse(isOk) {
+    let allStates = this.state.allStates;
     if (isOk) {
       localStorage.clear();
-      this.setState(() => (
-         {allStates: {
-          speakers: initialSpeakersList,
-          currentIndex: 0,
-          dropDownOpen: false,
-          clearModelShow: false
-        }}
-      ));
-    } else {
-      let allStates = this.state.allStates;
+
+      allStates.currentIndex = 0;
       allStates.clearModelShow = false;
-      this.setState(() => allStates);
+      allStates.dropDownOpen = false;
+      allStates.speakers = JSON.parse(JSON.stringify(initialSpeakersList));
+
+    } else {
+      allStates.clearModelShow = false;
     }
+    this.setState(() => allStates);
   }
 
   handleClear() {

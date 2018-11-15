@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a13878a0-1343-4dd8-8492-11dd7c562f97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/OkCancelModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FillerWord.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FillerWord.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GrammarianSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GrammarianSheet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/list.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -86,7 +78,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="26" />
-          <entry key="js" value="9130" />
+          <entry key="js" value="9333" />
           <entry key="json" value="236" />
           <entry key="jsx" value="4" />
           <entry key="txt" value="107" />
@@ -97,7 +89,7 @@
           <entry key="CSS" value="26" />
           <entry key="JSON" value="236" />
           <entry key="JSX Harmony" value="4" />
-          <entry key="JavaScript" value="9130" />
+          <entry key="JavaScript" value="9333" />
           <entry key="PLAIN_TEXT" value="107" />
         </counts>
       </usages-collector>
@@ -120,8 +112,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
+            <state relative-caret-position="209">
+              <caret line="68" column="74" selection-start-line="68" selection-start-column="74" selection-end-line="68" selection-end-column="74" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -132,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/GrammarianSheet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-206">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="-190">
+              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -360,7 +352,7 @@
       <workItem from="1542076359174" duration="9922000" />
       <workItem from="1542164895852" duration="2452000" />
       <workItem from="1542170910002" duration="5825000" />
-      <workItem from="1542252302714" duration="13485000" />
+      <workItem from="1542252302714" duration="14585000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit.">
       <created>1542091022086</created>
@@ -404,11 +396,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542176723412</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="UI Changes. Make the form invisible when the menu drop down is open.">
+      <created>1542266623442</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1542266623442</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77596000" />
+    <option name="totallyTimeSpent" value="78696000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1020" extended-state="6" />
@@ -626,16 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/GrammarianSheet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-206">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/MainMenu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -646,10 +635,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/GrammarianSheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
+        <state relative-caret-position="209">
+          <caret line="68" column="74" selection-start-line="68" selection-start-column="74" selection-end-line="68" selection-end-column="74" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
