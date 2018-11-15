@@ -16,8 +16,8 @@ export class OkCancelModel extends Component {
           {this.props.modelText}
         </Modal.Body>
         <Modal.Footer>
-          <Button bsStyle='success' onClick={() => this.props.handleResponse(true)}>{this.props.OkCaption}</Button>
-          <Button bsStyle='danger' onClick={() => this.props.handleResponse(false)}>{this.props.CancelCaption}</Button>
+          <Button bsStyle='danger' onClick={() => this.props.handleResponse(true)}>{this.props.OkCaption}</Button>
+          <Button bsStyle='success' onClick={() => this.props.handleResponse(false)}>{this.props.CancelCaption}</Button>
         </Modal.Footer>
       </Modal>
     )
