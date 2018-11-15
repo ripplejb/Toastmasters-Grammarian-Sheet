@@ -1,6 +1,6 @@
 import {fillers} from './fillers';
 
-export const speakers = {
+export const initialSpeakersList = {
   list: [
     {
       id: 1,

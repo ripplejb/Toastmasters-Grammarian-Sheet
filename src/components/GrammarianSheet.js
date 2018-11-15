@@ -12,14 +12,9 @@ export class GrammarianSheet extends Component {
     this.findFillerIndex = this.findFillerIndex.bind(this);
     this.saveState = this.saveState.bind(this);
 
-    this.state = {
-      speaker: props.speaker
-    };
-
   }
 
   saveState(speaker) {
-    this.setState({speaker: speaker});
     this.props.onGrammarianSheetChange(speaker);
   }
 
@@ -46,13 +41,14 @@ export class GrammarianSheet extends Component {
   render() {
     return (
       <Form inline>
-        <FormGroup>
-          <Col xs={12} md={12} sm={12}>
+          <Col xs={12} md={12} sm={12} lg={12}>
             <FormGroup>
             <ControlLabel >{this.props.speaker.title}</ControlLabel>
             <FormControl type='text' bsSize='lg' placeholder={this.props.speaker.title + ' Name'} value={this.props.speaker.name}
                          onChange={this.handleChange}/>
             </FormGroup>
+          </Col>
+          <Col xs={12} md={12} sm={12} lg={12}>
 
           {
             this.props.speaker.fillerCounts.map((filler) => {
@@ -60,7 +56,6 @@ export class GrammarianSheet extends Component {
             })
           }
           </Col>
-      </FormGroup>
       </Form>
     )
   }
