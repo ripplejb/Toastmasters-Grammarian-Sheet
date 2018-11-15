@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/Toastmasters-Grammarian-Sheet/static/css/main.d7be2d53.chunk.css"
   },
   {
-    "revision": "255d9e5bebcb95b91bc842c992a88c51",
+    "revision": "af904acf1c14aa23c83bbc7716069e80",
     "url": "/Toastmasters-Grammarian-Sheet/index.html"
   }
 ];
