@@ -1,6 +1,14 @@
 
-See the Grammarian Sheet in [Action](https://ripplejb.github.io/Toastmasters-Grammarian-Sheet/)
+## [Click here to see running App](https://ripplejb.github.io/Toastmasters-Grammarian-Sheet/)
 
+OR
+
+To try the app on your mobile. Please scan the QR code.
+
+![QR Code to App URL](https://github.com/ripplejb/Toastmasters-Grammarian-Sheet/blob/master/qrcode.47783124.png)
+
+
+## App instructions
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
