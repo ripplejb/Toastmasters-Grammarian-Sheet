@@ -8,14 +8,16 @@ import {OkCancelModel} from "./components/OkCancelModel";
 
 class App extends Component {
   LOCAL_STORAGE_KEY = "speakers";
+  LOCAL_STORAGE_SPEAKER_INDEX = "speakerIndex"
 
   constructor(props, context) {
     super(props, context);
     const savedSpeakers = localStorage.getItem(this.LOCAL_STORAGE_KEY);
+    const speakerIndex = localStorage.getItem(this.LOCAL_STORAGE_SPEAKER_INDEX);
     this.state = {
       allStates: {
         speakers: savedSpeakers ? JSON.parse(savedSpeakers) : JSON.parse(JSON.stringify(initialSpeakersList)),
-        currentIndex: 0,
+        currentIndex: speakerIndex ? parseInt(speakerIndex, 10): 0,
         dropDownOpen: false,
         clearModelShow: false
       }
@@ -46,6 +48,7 @@ class App extends Component {
     if (i < 0) return;
     let allStates = this.state.allStates;
     allStates.currentIndex = i;
+    localStorage.setItem(this.LOCAL_STORAGE_SPEAKER_INDEX, i);
     this.setState({allStates: allStates})
   }
 

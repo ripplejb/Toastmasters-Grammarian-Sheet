@@ -36,7 +36,7 @@ export class MainMenu extends Component {
         </Nav>
         <Nav pullRight>
           <NavItem onClick={this.props.handleClear}>
-            <Glyphicon glyph='trash' />
+            <Glyphicon glyph='refresh' />
           </NavItem>
         </Nav>
       </Navbar.Collapse>
