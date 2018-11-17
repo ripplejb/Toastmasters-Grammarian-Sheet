@@ -10,6 +10,10 @@ To try the app on your mobile. Please scan the QR code.
 
 ## App instructions
 
+## Component Diagram.
+
+![React Component Diagram](https://github.com/ripplejb/Toastmasters-Grammarian-Sheet/blob/master/src/App.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
