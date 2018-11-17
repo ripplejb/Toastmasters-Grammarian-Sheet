@@ -94,7 +94,7 @@ class App extends Component {
     allStates.addSpeakerShow = false;
     if (newSpeaker !== null) {
       allStates.speakers.list.push({
-        id: allStates.speakers.list.length,
+        id: allStates.speakers.list.length + 1,
         title: newSpeaker.title,
         name: newSpeaker.name,
         fillerCounts: fillers.list.map(a => Object.assign({}, a))
