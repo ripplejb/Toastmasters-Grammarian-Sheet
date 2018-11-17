@@ -13,20 +13,45 @@ class App extends Component {
   LOCAL_STORAGE_KEY = "speakers";
   LOCAL_STORAGE_SPEAKER_INDEX = "speakerIndex";
 
+  getInitialSpeakerList() {
+    const savedSpeakers = localStorage.getItem(this.LOCAL_STORAGE_KEY);
+
+    let speakers = null;
+
+    if (savedSpeakers)
+      speakers = JSON.parse(savedSpeakers);
+    else
+      JSON.parse(JSON.stringify(initialSpeakersList));
+
+    return speakers;
+  }
+
+  getInitialSpeakerIndex(speakers) {
+    const speakerIndex = localStorage.getItem(this.LOCAL_STORAGE_SPEAKER_INDEX);
+    let index = 0;
+    if (speakerIndex) {
+      index = parseInt(speakerIndex, 10);
+      if (index >= speakers.list.length) index = 0;
+    }
+    return index;
+  }
+
   constructor(props, context) {
     super(props, context);
-    const savedSpeakers = localStorage.getItem(this.LOCAL_STORAGE_KEY);
-    const speakerIndex = localStorage.getItem(this.LOCAL_STORAGE_SPEAKER_INDEX);
+
+    let speakers = this.getInitialSpeakerList();
+
     this.state = {
       allStates: {
-        speakers: savedSpeakers ? JSON.parse(savedSpeakers) : JSON.parse(JSON.stringify(initialSpeakersList)),
-        currentIndex: speakerIndex ? parseInt(speakerIndex, 10): 0,
+        speakers: speakers,
+        currentIndex: this.getInitialSpeakerIndex(speakers),
         dropDownOpen: false,
         clearModelShow: false,
         addSpeakerShow: false,
         removeSpeakerShow: false
       }
     };
+
     this.handleRoleChange = this.handleRoleChange.bind(this);
     this.handleDropDown = this.handleDropDown.bind(this);
     this.handleClearModelResponse = this.handleClearModelResponse.bind(this);
@@ -100,6 +125,7 @@ class App extends Component {
         id: allStates.speakers.list.length + 1,
         title: newSpeaker.title,
         name: newSpeaker.name,
+        currentIndex: this.state.currentIndex < 0 ? 0: this.state.currentIndex,
         fillerCounts: fillers.list.map(a => Object.assign({}, a))
       });
       localStorage.setItem(this.LOCAL_STORAGE_KEY, JSON.stringify(allStates.speakers));
@@ -112,13 +138,14 @@ class App extends Component {
     let allStates = this.state.allStates;
     allStates.removeSpeakerShow = false;
     if (speakerIdTobeRemoved !== null) {
-      console.log(speakerIdTobeRemoved);
-      const i = this.findIndex(speakerIdTobeRemoved);
-      console.log(i);
+      const i = this.findIndex(parseInt(speakerIdTobeRemoved));
       if (i >= 0 && i < allStates.speakers.list.length) {
         allStates.speakers.list.splice(i, 1);
         localStorage.setItem(this.LOCAL_STORAGE_KEY, JSON.stringify(allStates.speakers));
       }
+    }
+    while(allStates.currentIndex >= allStates.speakers.list.length && allStates.currentIndex >= 0) {
+      allStates.currentIndex--;
     }
     this.setState(() => allStates);
 
@@ -153,7 +180,10 @@ class App extends Component {
             transitionAppearTimeout={1000}
             transitionEnter={false}
             transitionLeave={false}>
-            <GrammarianSheet key="1" speaker={this.state.allStates.speakers.list[this.state.allStates.currentIndex]}
+            <GrammarianSheet key="1"
+                             speaker={
+                               this.state.allStates.speakers.list[this.state.allStates.currentIndex < 0 ? 0 : this.state.allStates.currentIndex]
+                             }
                              onGrammarianSheetChange={(speaker) => this.handleGrammarianSheetChange(speaker)}/>
           </ReactCSSTransitionGroup>
           :

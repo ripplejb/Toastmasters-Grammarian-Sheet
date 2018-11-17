@@ -36,7 +36,7 @@ export class RemoveSpeaker extends Component{
       this.deletePressCount = 0;
     }
     this.deletePressCount++;
-    if (this.deletePressCount === 3) {
+    if (this.deletePressCount === 4) {
       this.props.handleResponse(this.state.speakerId)
     }
   }
@@ -56,7 +56,7 @@ export class RemoveSpeaker extends Component{
     return(
       <Modal show={this.props.show} onEntering={this.onEntering}>
         <Modal.Header closeButton>
-          <Modal.Title>Add A Speaker</Modal.Title>
+          <Modal.Title>Remove A Speaker</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Grid fluid style={this.paddingStyle.grid}>
@@ -79,7 +79,7 @@ export class RemoveSpeaker extends Component{
         <Modal.Footer>
           <Button bsStyle='danger' onClick={this.handleDelete}
                   disabled={this.state.name === '' || this.state.title === ''}>
-            Select 4 Times To Delete
+            Click/Press 4 Times To Delete
           </Button>
           <Button bsStyle='success' onClick={() => this.props.handleResponse(null)}>Cancel</Button>
         </Modal.Footer>
