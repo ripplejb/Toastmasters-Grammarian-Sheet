@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a13878a0-1343-4dd8-8492-11dd7c562f97" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/RemoveSpeaker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AddSpeaker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddSpeaker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GrammarianSheet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GrammarianSheet.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -13,6 +16,28 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/components/AddSpeaker.js">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="223">
+                    <caret line="68" column="64" lean-forward="true" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
+                    <folding>
+                      <element signature="e#0#38#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="606407595">
@@ -35,7 +60,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="2" />
           <entry key="ico" value="2" />
-          <entry key="js" value="44" />
+          <entry key="js" value="47" />
           <entry key="json" value="5" />
           <entry key="md" value="1" />
           <entry key="png" value="2" />
@@ -48,10 +73,10 @@
           <entry key="HTML" value="2" />
           <entry key="Image" value="4" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="41" />
+          <entry key="JavaScript" value="43" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="UML" value="4" />
+          <entry key="UML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -63,10 +88,10 @@
         <counts>
           <entry key="css" value="26" />
           <entry key="html" value="29" />
-          <entry key="js" value="11247" />
+          <entry key="js" value="12146" />
           <entry key="json" value="236" />
           <entry key="jsx" value="4" />
-          <entry key="txt" value="387" />
+          <entry key="txt" value="437" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -75,8 +100,8 @@
           <entry key="HTML" value="29" />
           <entry key="JSON" value="236" />
           <entry key="JSX Harmony" value="4" />
-          <entry key="JavaScript" value="11247" />
-          <entry key="PLAIN_TEXT" value="387" />
+          <entry key="JavaScript" value="12146" />
+          <entry key="PLAIN_TEXT" value="437" />
         </counts>
       </usages-collector>
     </session>
@@ -95,20 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-499">
-              <caret line="102" selection-start-line="102" selection-end-line="102" />
+            <state relative-caret-position="261">
+              <caret line="116" column="21" lean-forward="true" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -117,10 +133,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
+        <entry file="file://$PROJECT_DIR$/src/components/RemoveSpeaker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="437">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,8 +147,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/GrammarianSheet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="66" column="54" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="54" />
+            <state relative-caret-position="337">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -158,8 +177,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+            <state relative-caret-position="475">
+              <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -169,18 +188,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/AddSpeaker.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -236,12 +243,13 @@
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/data/roles.js" />
-        <option value="$PROJECT_DIR$/src/components/GrammarianSheet.js" />
         <option value="$PROJECT_DIR$/src/components/MainMenu.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/OkCancelModel.js" />
         <option value="$PROJECT_DIR$/src/data/list.js" />
+        <option value="$PROJECT_DIR$/src/components/GrammarianSheet.js" />
         <option value="$PROJECT_DIR$/src/components/AddSpeaker.js" />
+        <option value="$PROJECT_DIR$/src/components/RemoveSpeaker.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
   </component>
@@ -411,7 +419,7 @@
       <workItem from="1542289569211" duration="613000" />
       <workItem from="1542290197847" duration="108000" />
       <workItem from="1542350973988" duration="1798000" />
-      <workItem from="1542429226333" duration="17159000" />
+      <workItem from="1542429226333" duration="21970000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit.">
       <created>1542091022086</created>
@@ -532,31 +540,45 @@
       <option name="project" value="LOCAL" />
       <updated>1542446330146</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Add new speaker functionality">
+      <created>1542446574456</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1542446574456</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fixed menu issue where wrong speaker get selected">
+      <created>1542446786054</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1542446786054</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98438000" />
+    <option name="totallyTimeSpent" value="103249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1020" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47658864" visible="true" weight="0.24986821" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47658864" visible="true" weight="0.24986821" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.5234114" side_tool="true" visible="true" weight="0.24986821" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49973643" weight="0.3295964" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49024776" visible="true" weight="0.3295964" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4897206" weight="0.3295964" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49920928" weight="0.39910313" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49868214" weight="0.3295964" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.5097522" side_tool="true" visible="true" weight="0.3295964" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4928835" weight="0.3295964" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5102794" side_tool="true" visible="true" weight="0.3295964" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49235636" weight="0.3295964" />
       <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.49973643" weight="0.3295964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -588,7 +610,8 @@
     <MESSAGE value="Save status now. That means, if you close your window or refresh the page. The refreshed page will appear as it is like before." />
     <MESSAGE value="Added QR Code" />
     <MESSAGE value="Add new speaker functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new speaker functionality" />
+    <MESSAGE value="Fixed menu issue where wrong speaker get selected" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed menu issue where wrong speaker get selected" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -616,32 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JavaScript-modules-diagram//home/ripal/WebstormProjects/grammarian/src/App.js">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JavaScript-modules-diagram</ID>
-          <OriginalElement>$PROJECT_DIR$/src/App.js</OriginalElement>
-          <nodes>
-            <node x="" y="">$PROJECT_DIR$/src/App.css</node>
-            <node x="" y="">$PROJECT_DIR$/src/App.js#App.css#42;/home/ripal/WebstormProjects/grammarian/src/App.js#Component#16;/home/ripal/WebstormProjects/grammarian/src/App.js#GrammarianSheet#155;/home/ripal/WebstormProjects/grammarian/src/App.js#MainMenu#70;/home/ripal/WebstormProjects/grammarian/src/App.js#React#7;/home/ripal/WebstormProjects/grammarian/src/App.js#speakers#118;</node>
-            <node x="" y="">$PROJECT_DIR$/src/components/GrammarianSheet.js#GrammarianSheet#147;</node>
-            <node x="" y="">$PROJECT_DIR$/src/components/MainMenu.js#MainMenu#185;</node>
-            <node x="" y="">$PROJECT_DIR$/node_modules/react/index.js</node>
-            <node x="" y="">$PROJECT_DIR$/src/data/list.js#speakers#49;</node>
-            <node x="" y="">$PROJECT_DIR$/node_modules/react/cjs/react.development.js#Component#59505;</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="343.0" y="235.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>All</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>Details</VISIBILITY>
         </state>
       </provider>
     </entry>
@@ -769,23 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/GrammarianSheet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="66" column="54" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/FillerWord.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/OkCancelModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -796,29 +776,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/data/list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-499">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        <state relative-caret-position="475">
+          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/FillerWord.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//home/ripal/WebstormProjects/grammarian/src/App.js">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/App.js</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/src/components/AddSpeaker.js#AddSpeaker#173;</node>
+            <node x="" y="">$PROJECT_DIR$/src/App.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/App.js#AddSpeaker#356;/home/ripal/WebstormProjects/grammarian/src/App.js#App.css#40;/home/ripal/WebstormProjects/grammarian/src/App.js#Component#15;/home/ripal/WebstormProjects/grammarian/src/App.js#GrammarianSheet#164;/home/ripal/WebstormProjects/grammarian/src/App.js#MainMenu#68;/home/ripal/WebstormProjects/grammarian/src/App.js#OkCancelModel#298;/home/ripal/WebstormProjects/grammarian/src/App.js#React#7;/home/ripal/WebstormProjects/grammarian/src/App.js#ReactCSSTransitionGroup#225;/home/ripal/WebstormProjects/grammarian/src/App.js#RemoveSpeaker#447;/home/ripal/WebstormProjects/grammarian/src/App.js#fillers#407;/home/ripal/WebstormProjects/grammarian/src/App.js#initialSpeakersList#116;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/GrammarianSheet.js#GrammarianSheet#175;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/MainMenu.js#MainMenu#230;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/OkCancelModel.js#OkCancelModel#87;</node>
+            <node x="" y="">$PROJECT_DIR$/src/components/RemoveSpeaker.js#RemoveSpeaker#123;</node>
+            <node x="" y="">$PROJECT_DIR$/src/data/fillers.js#fillers#13;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-addons-css-transition-group/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/data/list.js#initialSpeakersList#49;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react/cjs/react.development.js#Component#59505;</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7364864864864865" x="478.0" y="603.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/GrammarianSheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/list.js">
+    <entry file="file://$PROJECT_DIR$/src/components/AddSpeaker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        <state relative-caret-position="223">
+          <caret line="68" column="64" lean-forward="true" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AddSpeaker.js">
+    <entry file="file://$PROJECT_DIR$/src/components/RemoveSpeaker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="437">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="116" column="21" lean-forward="true" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

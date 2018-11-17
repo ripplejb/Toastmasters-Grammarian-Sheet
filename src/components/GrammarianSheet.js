@@ -70,7 +70,6 @@ export class GrammarianSheet extends Component {
         </Row>
         <Row style={this.paddingStyle.row}>
           <Col xs={12} md={12} sm={12} lg={12} style={this.paddingStyle.col}>
-
             {
               this.props.speaker.fillerCounts.map((filler) => {
                 return <FillerWord filler={filler} onFillerCountChange={() => this.fillerCountChange(filler)}/>

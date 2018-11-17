@@ -7,6 +7,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import {OkCancelModel} from "./components/OkCancelModel";
 import {AddSpeaker} from "./components/AddSpeaker"
 import {fillers} from "./data/fillers";
+import {RemoveSpeaker} from "./components/RemoveSpeaker";
 
 class App extends Component {
   LOCAL_STORAGE_KEY = "speakers";
@@ -22,7 +23,8 @@ class App extends Component {
         currentIndex: speakerIndex ? parseInt(speakerIndex, 10): 0,
         dropDownOpen: false,
         clearModelShow: false,
-        addSpeakerShow: false
+        addSpeakerShow: false,
+        removeSpeakerShow: false
       }
     };
     this.handleRoleChange = this.handleRoleChange.bind(this);
@@ -32,6 +34,7 @@ class App extends Component {
     this.handleAddSpeaker = this.handleAddSpeaker.bind(this);
     this.handleRemoveSpeaker = this.handleRemoveSpeaker.bind(this);
     this.handleAddSpeakerResponse = this.handleAddSpeakerResponse.bind(this);
+    this.handleRemoveSpeakerResponse = this.handleRemoveSpeakerResponse.bind(this);
   }
 
   findIndex(id) {
@@ -105,6 +108,22 @@ class App extends Component {
 
   }
 
+  handleRemoveSpeakerResponse(speakerIdTobeRemoved) {
+    let allStates = this.state.allStates;
+    allStates.removeSpeakerShow = false;
+    if (speakerIdTobeRemoved !== null) {
+      console.log(speakerIdTobeRemoved);
+      const i = this.findIndex(speakerIdTobeRemoved);
+      console.log(i);
+      if (i >= 0 && i < allStates.speakers.list.length) {
+        allStates.speakers.list.splice(i, 1);
+        localStorage.setItem(this.LOCAL_STORAGE_KEY, JSON.stringify(allStates.speakers));
+      }
+    }
+    this.setState(() => allStates);
+
+  }
+
   handleAddSpeaker() {
     let allStates = this.state.allStates;
     allStates.addSpeakerShow = true;
@@ -112,9 +131,9 @@ class App extends Component {
   }
 
   handleRemoveSpeaker() {
-    // let allStates = this.state.allStates;
-    // allStates.addSpeakerShow = true;
-    // this.setState(() => allStates);
+    let allStates = this.state.allStates;
+    allStates.removeSpeakerShow = true;
+    this.setState(() => allStates);
   }
 
   render() {
@@ -152,6 +171,11 @@ class App extends Component {
           handleResponse={this.handleAddSpeakerResponse}
           show={this.state.allStates.addSpeakerShow} />
 
+        <RemoveSpeaker
+          handleResponse={this.handleRemoveSpeakerResponse}
+          show={this.state.allStates.removeSpeakerShow}
+          speakers={this.state.allStates.speakers.list}
+        />
       </div>
     );
   }

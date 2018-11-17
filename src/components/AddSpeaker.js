@@ -32,7 +32,7 @@ export class AddSpeaker extends Component{
   constructor(props) {
     super(props);
     this.state = {
-      title: roles[0].role,
+      title: '',
       name: ''
     };
 
@@ -43,7 +43,7 @@ export class AddSpeaker extends Component{
 
 
   onEntering() {
-    this.setState(() => {return {title:roles[0].role, name: ''}})
+    this.setState(() => {return {title:'', name: ''}})
 
   }
 
@@ -66,9 +66,10 @@ export class AddSpeaker extends Component{
             <Row style={this.paddingStyle.row}>
               <FormGroup>
                 <ControlLabel>Name</ControlLabel>
-                <FormControl componentClass="select" bsSize='lg' placeholder='Select Role'
+                <FormControl componentClass="select" bsSize='lg'
                              value={this.state.title}
                              onChange={this.handleTitleChange}>
+                  <option value={null}> </option>
                   {
                     roles.map((role) => {
                       return <option value={role.role}>{role.role}</option>
