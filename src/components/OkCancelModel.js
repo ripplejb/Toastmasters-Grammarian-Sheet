@@ -2,12 +2,9 @@ import React, {Component} from 'react'
 import {Modal, Button} from 'react-bootstrap';
 
 export class OkCancelModel extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
-    return(
+    return (
       <Modal show={this.props.show}>
         <Modal.Header closeButton>
           <Modal.Title>{this.props.modelTitle}</Modal.Title>
@@ -16,8 +13,9 @@ export class OkCancelModel extends Component {
           {this.props.modelText}
         </Modal.Body>
         <Modal.Footer>
-          <Button bsStyle='danger' onClick={() => this.props.handleResponse(true)}>{this.props.OkCaption}</Button>
-          <Button bsStyle='success' onClick={() => this.props.handleResponse(false)}>{this.props.CancelCaption}</Button>
+          <Button bsStyle='danger' bsSize='lg' onClick={() => this.props.handleResponse(true)}>{this.props.OkCaption}</Button>
+          <Button bsStyle='success' bsSize='lg'
+                  onClick={() => this.props.handleResponse(false)}>{this.props.CancelCaption}</Button>
         </Modal.Footer>
       </Modal>
     )

@@ -1,9 +1,25 @@
 import React, {Component} from 'react';
-import {Form, FormGroup, Col, FormControl, ControlLabel} from 'react-bootstrap';
+import {Form, FormGroup, Grid, Col, Row, FormControl, ControlLabel} from 'react-bootstrap';
 import {FillerWord} from "./FillerWord";
 
 
 export class GrammarianSheet extends Component {
+
+  paddingStyle = {
+    grid: {
+      paddingLeft: 5,
+      paddingRight: 5
+    },
+    row: {
+      marginLeft: 5,
+      marginRight: 5
+    },
+    col: {
+      paddingLeft: 5,
+      paddingRight: 5
+    }
+  };
+
   constructor(props, context) {
     super(props, context);
 
@@ -40,22 +56,29 @@ export class GrammarianSheet extends Component {
 
   render() {
     return (
-      <Form inline>
-          <Col xs={12} md={12} sm={12} lg={12}>
+      <Form>
+        <Grid fluid style={this.paddingStyle.grid}>
+        <Row style={this.paddingStyle.row}>
+          <Col xs={12} md={12} sm={12} lg={12} style={this.paddingStyle.col}>
             <FormGroup>
-            <ControlLabel >{this.props.speaker.title}</ControlLabel>
-            <FormControl type='text' bsSize='lg' placeholder={this.props.speaker.title + ' Name'} value={this.props.speaker.name}
-                         onChange={this.handleChange}/>
+              <ControlLabel>{this.props.speaker.title}</ControlLabel>
+              <FormControl bsSize='lg' placeholder={this.props.speaker.title + ' Name'}
+                           value={this.props.speaker.name}
+                           onChange={this.handleChange}/>
             </FormGroup>
           </Col>
-          <Col xs={12} md={12} sm={12} lg={12}>
+        </Row>
+        <Row style={this.paddingStyle.row}>
+          <Col xs={12} md={12} sm={12} lg={12} style={this.paddingStyle.col}>
 
-          {
-            this.props.speaker.fillerCounts.map((filler) => {
-              return <FillerWord filler={filler} onFillerCountChange={() => this.fillerCountChange(filler)}/>
-            })
-          }
+            {
+              this.props.speaker.fillerCounts.map((filler) => {
+                return <FillerWord filler={filler} onFillerCountChange={() => this.fillerCountChange(filler)}/>
+              })
+            }
           </Col>
+        </Row>
+        </Grid>
       </Form>
     )
   }

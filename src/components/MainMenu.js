@@ -1,13 +1,9 @@
 import React, {Component} from 'react';
-import {NavDropdown, Navbar, MenuItem, Nav, Glyphicon, NavItem} from 'react-bootstrap';
+import {NavDropdown, Navbar, MenuItem, Nav, Glyphicon, NavItem, Grid, Col} from 'react-bootstrap';
 import '../assets/css/bootstrap.min.css';
 import '../assets/css/bootstrap-theme.min.css';
 
 export class MainMenu extends Component {
-
-  constructor(props) {
-    super(props)
-  }
 
   render() {
     return (
@@ -28,13 +24,26 @@ export class MainMenu extends Component {
                     this.props.handleSelect(speaker.id)
                   }
                 }>
-                  {speaker.title}
+                  <Grid>
+                    <Col sm={6} md={6} lg={6} xs={6}>
+                      {speaker.title}
+                    </Col>
+                    <Col sm={6} md={6} lg={6} xs={6}>
+                      {speaker.name}
+                    </Col>
+                  </Grid>
                 </MenuItem>
               })
             }
           </NavDropdown>
         </Nav>
         <Nav pullRight>
+          <NavItem onClick={this.props.handleAddSpeaker}>
+            <Glyphicon glyph='plus' />
+          </NavItem>
+          <NavItem onClick={this.props.handleRemoveSpeaker}>
+            <Glyphicon glyph='minus' />
+          </NavItem>
           <NavItem onClick={this.props.handleClear}>
             <Glyphicon glyph='refresh' />
           </NavItem>

@@ -5,10 +5,12 @@ import {initialSpeakersList} from './data/list'
 import {GrammarianSheet} from "./components/GrammarianSheet";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import {OkCancelModel} from "./components/OkCancelModel";
+import {AddSpeaker} from "./components/AddSpeaker"
+import {fillers} from "./data/fillers";
 
 class App extends Component {
   LOCAL_STORAGE_KEY = "speakers";
-  LOCAL_STORAGE_SPEAKER_INDEX = "speakerIndex"
+  LOCAL_STORAGE_SPEAKER_INDEX = "speakerIndex";
 
   constructor(props, context) {
     super(props, context);
@@ -19,13 +21,17 @@ class App extends Component {
         speakers: savedSpeakers ? JSON.parse(savedSpeakers) : JSON.parse(JSON.stringify(initialSpeakersList)),
         currentIndex: speakerIndex ? parseInt(speakerIndex, 10): 0,
         dropDownOpen: false,
-        clearModelShow: false
+        clearModelShow: false,
+        addSpeakerShow: false
       }
     };
     this.handleRoleChange = this.handleRoleChange.bind(this);
     this.handleDropDown = this.handleDropDown.bind(this);
     this.handleClearModelResponse = this.handleClearModelResponse.bind(this);
     this.handleClear = this.handleClear.bind(this);
+    this.handleAddSpeaker = this.handleAddSpeaker.bind(this);
+    this.handleRemoveSpeaker = this.handleRemoveSpeaker.bind(this);
+    this.handleAddSpeakerResponse = this.handleAddSpeakerResponse.bind(this);
   }
 
   findIndex(id) {
@@ -57,7 +63,7 @@ class App extends Component {
     if (i < 0) return;
     let allStates = this.state.allStates;
     allStates.speakers.list[i] = speaker;
-    localStorage.setItem(this.LOCAL_STORAGE_KEY, JSON.stringify(allStates.speakers))
+    localStorage.setItem(this.LOCAL_STORAGE_KEY, JSON.stringify(allStates.speakers));
     this.setState(() => allStates);
   }
 
@@ -83,6 +89,34 @@ class App extends Component {
     this.setState(() => allStates);
   }
 
+  handleAddSpeakerResponse(newSpeaker) {
+    let allStates = this.state.allStates;
+    allStates.addSpeakerShow = false;
+    if (newSpeaker !== null) {
+      allStates.speakers.list.push({
+        id: allStates.speakers.list.length,
+        title: newSpeaker.title,
+        name: newSpeaker.name,
+        fillerCounts: fillers.list.map(a => Object.assign({}, a))
+      });
+      localStorage.setItem(this.LOCAL_STORAGE_KEY, JSON.stringify(allStates.speakers));
+    }
+    this.setState(() => allStates);
+
+  }
+
+  handleAddSpeaker() {
+    let allStates = this.state.allStates;
+    allStates.addSpeakerShow = true;
+    this.setState(() => allStates);
+  }
+
+  handleRemoveSpeaker() {
+    // let allStates = this.state.allStates;
+    // allStates.addSpeakerShow = true;
+    // this.setState(() => allStates);
+  }
+
   render() {
     return (
       <div className="App">
@@ -90,8 +124,10 @@ class App extends Component {
                   handleSelect={this.handleRoleChange}
                   handleDropDown={() => this.handleDropDown()}
                   handleClear={this.handleClear}
+                  handleAddSpeaker={this.handleAddSpeaker}
+                  handleRemoveSpeaker={this.handleRemoveSpeaker}
         />
-        {!this.state.allStates.dropDownOpen ?
+        {!this.state.allStates.dropDownOpen && (this.state.allStates.speakers.list.length > 0) ?
           <ReactCSSTransitionGroup
             transitionName="fade"
             transitionAppear={true}
@@ -111,6 +147,11 @@ class App extends Component {
           modelTitle="Warning"
           modelText="Do you want to clear the data ?"
         />
+
+        <AddSpeaker
+          handleResponse={this.handleAddSpeakerResponse}
+          show={this.state.allStates.addSpeakerShow} />
+
       </div>
     );
   }
