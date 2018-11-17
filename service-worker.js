@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Toastmasters-Grammarian-Sheet/precache-manifest.c21241ad05c58cfc760b98f30f0e6b54.js"
+  "/Toastmasters-Grammarian-Sheet/precache-manifest.1fb75c9364e6869404a63cbd6f3e76b7.js"
 );
 
 workbox.clientsClaim();
