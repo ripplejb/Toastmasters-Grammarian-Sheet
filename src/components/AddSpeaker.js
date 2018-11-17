@@ -38,18 +38,18 @@ export class AddSpeaker extends Component{
 
     this.handleNameChange = this.handleNameChange.bind(this);
     this.handleTitleChange = this.handleTitleChange.bind(this);
-    this.onEnter = this.onEnter.bind(this);
+    this.onEntering = this.onEntering.bind(this);
   }
 
 
-  onEnter() {
+  onEntering() {
     this.setState(() => {return {title:roles[0].role, name: ''}})
 
   }
 
   render() {
     return(
-      <Modal show={this.props.show} onEntering={this.onEntered}>
+      <Modal show={this.props.show} onEntering={this.onEntering}>
         <Modal.Header closeButton>
           <Modal.Title>Add A Speaker</Modal.Title>
         </Modal.Header>
