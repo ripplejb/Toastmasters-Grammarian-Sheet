@@ -49,7 +49,7 @@ export class AddSpeaker extends Component{
 
   render() {
     return(
-      <Modal show={this.props.show} onEnter={this.onEntered}>
+      <Modal show={this.props.show} onEntering={this.onEntered}>
         <Modal.Header closeButton>
           <Modal.Title>Add A Speaker</Modal.Title>
         </Modal.Header>
