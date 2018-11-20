@@ -19,13 +19,15 @@ export class AddSpeaker extends Component{
     }
   };
 
-  handleTitleChange(e) {
-    let value = e.target.value;
+  role = null;
+  name = '';
+  handleRoleChange(e) {
+    let value = this.role.value;
     this.setState((prevState) => {return {title: value, name: prevState.name}})
   }
 
   handleNameChange(e) {
-    let value = e.target.value;
+    let value = this.name.value;
     this.setState((prevState) => {return {title: prevState.title, name: value}})
   };
 
@@ -37,7 +39,7 @@ export class AddSpeaker extends Component{
     };
 
     this.handleNameChange = this.handleNameChange.bind(this);
-    this.handleTitleChange = this.handleTitleChange.bind(this);
+    this.handleRoleChange = this.handleRoleChange.bind(this);
     this.onEntering = this.onEntering.bind(this);
   }
 
@@ -57,18 +59,20 @@ export class AddSpeaker extends Component{
           <Grid fluid style={this.paddingStyle.grid}>
             <Row style={this.paddingStyle.row}>
               <FormGroup>
-                <ControlLabel>Role</ControlLabel>
+                <ControlLabel>Name</ControlLabel>
                 <FormControl type='text' bsSize='lg' placeholder='Name'
                              value={this.state.name}
-                             onChange={this.handleNameChange}/>
+                             onChange={this.handleNameChange}
+                            inputRef={ref => {this.name = ref;}}/>
               </FormGroup>
             </Row>
             <Row style={this.paddingStyle.row}>
               <FormGroup>
-                <ControlLabel>Name</ControlLabel>
+                <ControlLabel>Role</ControlLabel>
                 <FormControl componentClass="select" bsSize='lg'
                              value={this.state.title}
-                             onChange={this.handleTitleChange}>
+                             onChange={this.handleRoleChange}
+                             inputRef={ref => {this.role = ref;}}>
                   <option value={null}> </option>
                   {
                     roles.map((role) => {

@@ -21,6 +21,7 @@ export class RemoveSpeaker extends Component{
 
   deletePressCount = 0;
   deleteTimeStart = Date.now();
+  speakerId = null;
 
   constructor(props) {
     super(props);
@@ -44,7 +45,7 @@ export class RemoveSpeaker extends Component{
   handleSpeakerChange(e) {
     this.deletePressCount = 0;
     this.deleteTimeStart = Date.now();
-    const value = e.target.value;
+    const value = this.speakerId.value;
     this.setState({speakerId: value});
   }
 
@@ -64,7 +65,8 @@ export class RemoveSpeaker extends Component{
               <FormGroup>
                 <FormControl componentClass="select" bsSize='lg'
                              value={this.state.speakerId}
-                             onChange={this.handleSpeakerChange}>
+                             onChange={this.handleSpeakerChange}
+                             inputRef={ref => {this.speakerId = ref}}>
                   <option value={null} />
                   {
                     this.props.speakers.map((speaker) => {
