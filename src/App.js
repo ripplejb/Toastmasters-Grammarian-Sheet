@@ -21,7 +21,7 @@ class App extends Component {
     if (savedSpeakers)
       speakers = JSON.parse(savedSpeakers);
     else
-      JSON.parse(JSON.stringify(initialSpeakersList));
+      speakers = JSON.parse(JSON.stringify(initialSpeakersList));
 
     return speakers;
   }
