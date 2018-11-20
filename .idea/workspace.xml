@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a13878a0-1343-4dd8-8492-11dd7c562f97" name="Default Changelist" comment="">
+    <list default="true" id="a13878a0-1343-4dd8-8492-11dd7c562f97" name="Default Changelist" comment="Fixed issues where the app crashes on remove a speaker.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RemoveSpeaker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RemoveSpeaker.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,7 +19,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/MainMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
+            <state relative-caret-position="760">
               <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -32,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="184" column="143" selection-start-line="184" selection-start-column="143" selection-end-line="184" selection-end-column="143" />
+            <state relative-caret-position="148">
+              <caret line="175" column="138" selection-start-line="175" selection-start-column="138" selection-end-line="175" selection-end-column="138" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -44,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/RemoveSpeaker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="76" column="17" lean-forward="true" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+            <state relative-caret-position="1425">
+              <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -56,8 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/AddSpeaker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="68" column="64" lean-forward="true" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
+            <state relative-caret-position="1254">
+              <caret line="68" column="64" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -327,7 +326,9 @@
       <workItem from="1542429226333" duration="22240000" />
       <workItem from="1542451681248" duration="46000" />
       <workItem from="1542451736901" duration="5000" />
-      <workItem from="1542474303952" duration="5821000" />
+      <workItem from="1542474303952" duration="6100000" />
+      <workItem from="1542676455899" duration="157000" />
+      <workItem from="1542679047482" duration="219000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit.">
       <created>1542091022086</created>
@@ -469,31 +470,45 @@
       <option name="project" value="LOCAL" />
       <updated>1542451530252</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Fixed issues where the app crashes on remove a speaker.">
+      <created>1542485812208</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1542485812209</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Fixed issues where the app crashes on remove a speaker.">
+      <created>1542485944801</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1542485944801</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109391000" />
+    <option name="totallyTimeSpent" value="110046000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1020" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4724541" visible="true" weight="0.24986821" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47" visible="true" weight="0.24986821" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.5275459" side_tool="true" visible="true" weight="0.24986821" />
+      <window_info id="npm" order="2" sideWeight="0.53" side_tool="true" visible="true" weight="0.24986821" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49973643" weight="0.3295964" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48919347" visible="true" weight="0.32922733" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48919347" weight="0.32922733" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49920928" weight="0.39910313" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49868214" weight="0.3295964" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.51080656" side_tool="true" visible="true" weight="0.32922733" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49024776" weight="0.32849163" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5113337" side_tool="true" visible="true" weight="0.3281075" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.48866633" visible="true" weight="0.3281075" />
       <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.49973643" weight="0.3295964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -524,7 +539,8 @@
     <MESSAGE value="Add new speaker functionality" />
     <MESSAGE value="Fixed menu issue where wrong speaker get selected" />
     <MESSAGE value="Adding remove speaker functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding remove speaker functionality" />
+    <MESSAGE value="Fixed issues where the app crashes on remove a speaker." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed issues where the app crashes on remove a speaker." />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -676,20 +692,51 @@
             <node x="" y="">$PROJECT_DIR$/src/components/OkCancelModel.js#OkCancelModel#87;</node>
             <node x="" y="">$PROJECT_DIR$/src/components/RemoveSpeaker.js#RemoveSpeaker#123;</node>
             <node x="" y="">$PROJECT_DIR$/src/data/fillers.js#fillers#13;</node>
-            <node x="" y="">$PROJECT_DIR$/node_modules/react/index.js</node>
             <node x="" y="">$PROJECT_DIR$/node_modules/react-addons-css-transition-group/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react/index.js</node>
             <node x="" y="">$PROJECT_DIR$/src/data/list.js#initialSpeakersList#49;</node>
-            <node x="" y="">$PROJECT_DIR$/node_modules/react/cjs/react.development.js#Component#59505;</node>
+            <node x="" y="">$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts</node>
+            <node x="" y="">Component;</node>
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.7364864864864865" x="478.0" y="603.0" />
+          <settings layout="Hierarchic Group" zoom="0.698595146871009" x="435.0" y="382.0" />
           <SelectedNodes />
           <Categories>
             <Category>All</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MainMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/RemoveSpeaker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AddSpeaker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="68" column="64" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -734,40 +781,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/MainMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/RemoveSpeaker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="76" column="17" lean-forward="true" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AddSpeaker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="68" column="64" lean-forward="true" selection-start-line="68" selection-start-column="64" selection-end-line="68" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="184" column="143" selection-start-line="184" selection-start-column="143" selection-end-line="184" selection-end-column="143" />
+        <state relative-caret-position="148">
+          <caret line="175" column="138" selection-start-line="175" selection-start-column="138" selection-end-line="175" selection-end-column="138" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

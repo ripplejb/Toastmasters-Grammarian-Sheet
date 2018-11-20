@@ -173,7 +173,7 @@ class App extends Component {
                   handleAddSpeaker={this.handleAddSpeaker}
                   handleRemoveSpeaker={this.handleRemoveSpeaker}
         />
-        {!this.state.allStates.dropDownOpen && (this.state.allStates.speakers.list.length > 0) ?
+        {!this.state.allStates.dropDownOpen && this.state.allStates.speakers.list != null && this.state.allStates.speakers.list.length > 0 ?
           <ReactCSSTransitionGroup
             transitionName="fade"
             transitionAppear={true}
