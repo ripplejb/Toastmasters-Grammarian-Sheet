@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import {MainMenu} from "./components/MainMenu";
+import MainMenu from "./components/MainMenu";
 import {initialSpeakersList} from './data/list'
 import {GrammarianSheet} from "./components/GrammarianSheet";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
@@ -8,6 +8,7 @@ import {OkCancelModel} from "./components/OkCancelModel";
 import {AddSpeaker} from "./components/AddSpeaker"
 import {fillers} from "./data/fillers";
 import {RemoveSpeaker} from "./components/RemoveSpeaker";
+import {withRouter} from 'react-router-dom'
 
 class App extends Component {
   LOCAL_STORAGE_KEY = "speakers";
@@ -36,8 +37,8 @@ class App extends Component {
     return index;
   }
 
-  constructor(props, context) {
-    super(props, context);
+  constructor(props) {
+    super(props);
 
     let speakers = this.getInitialSpeakerList();
 
@@ -211,4 +212,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);
