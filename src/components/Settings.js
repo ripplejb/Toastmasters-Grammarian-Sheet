@@ -6,8 +6,9 @@ class Settings extends Component {
   render() {
     return (<div>
       <Button onClick={() => this.props.history.push("/")}>
-        Test
+        Back
       </Button>
+      <h1>This page is under construction...</h1>
     </div>);
   }
 }

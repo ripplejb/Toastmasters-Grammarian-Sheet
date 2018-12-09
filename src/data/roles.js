@@ -25,22 +25,18 @@ export const roles = [
   },
   {
     id: 7,
-    role: 'TableTopic Speaker'
-  },
-  {
-    id: 8,
     role: 'General Evaluator'
   },
   {
-    id: 9,
+    id: 8,
     role: 'Evaluator'
   },
   {
-    id: 10,
+    id: 9,
     role: 'Timer'
   },
   {
-    id: 11,
+    id: 10,
     role: 'Grammarian'
   }
 ];
