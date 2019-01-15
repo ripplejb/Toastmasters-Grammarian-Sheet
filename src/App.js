@@ -126,9 +126,9 @@ class App extends Component {
         id: allStates.speakers.list.length + 1,
         title: newSpeaker.title,
         name: newSpeaker.name,
-        currentIndex: this.state.currentIndex < 0 ? 0: this.state.currentIndex,
         fillerCounts: fillers.list.map(a => Object.assign({}, a))
       });
+      allStates.currentIndex = allStates.speakers.list.length - 1;
       localStorage.setItem(this.LOCAL_STORAGE_KEY, JSON.stringify(allStates.speakers));
     }
     this.setState(() => allStates);
